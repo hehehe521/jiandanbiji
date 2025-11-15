@@ -2377,12 +2377,15 @@ body::after {
   
   .actions {
     width: 100%;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
   }
   
   .btn {
+    flex: 1;
     padding: 10px 15px;
     font-size: 0.85rem;
+    justify-content: center;
   }
   
   #notesList {
@@ -2410,12 +2413,13 @@ body::after {
   }
   
   .actions {
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
+    gap: 10px;
   }
   
   .btn {
-    width: 100%;
+    flex: 1;
     justify-content: center;
   }
 }
@@ -2451,7 +2455,7 @@ body::after {
       <h1 class="title">
         <span class="title-icon">📒</span>
         <span>Notes</span>
-        <span class="version">v1.0</span>
+        <span class="version">v1.1</span>
       </h1>
       <a href="https://github.com/aabacada/jiandanbiji" target="_blank" rel="noopener noreferrer" class="github-link">
         <svg class="github-icon" viewBox="0 0 24 24">
@@ -3555,12 +3559,17 @@ body::after {
   }
   
   .menu-buttons {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
+    gap: 5px;
   }
   
   .menu-btn {
-    width: 100%;
+    flex: 1;
+    min-width: calc(50% - 5px);
+    padding: 8px 10px;
+    font-size: 0.75rem;
     justify-content: center;
   }
 }
