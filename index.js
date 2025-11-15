@@ -1336,12 +1336,17 @@ a:hover {
   }
   
   .actions {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
+    gap: 8px;
   }
   
   .btn {
-    width: 100%;
+    flex: 1;
+    min-width: calc(33.33% - 6px);
+    padding: 8px 10px;
+    font-size: 0.8rem;
     justify-content: center;
   }
 }
@@ -1353,6 +1358,21 @@ a:hover {
   
   .title {
     font-size: 1rem;
+  }
+  
+  .actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5px;
+  }
+  
+  .btn {
+    flex: 1;
+    min-width: calc(50% - 3px);
+    padding: 8px 6px;
+    font-size: 0.75rem;
+    justify-content: center;
   }
   
   li {
